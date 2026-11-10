@@ -1,0 +1,37 @@
+/* Gremio de Aventureros · estilos (se entrega completo al alumnado) */
+:root { --tinta:#1B2550; --acento:#E0452F; --oro:#B8860B; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; line-height:1.5; }
+body.tema-claro  { background:#f7f2e7; color:#1B2550; }
+body.tema-oscuro { background:#151a2e; color:#e8e4d8; --tinta:#e8e4d8; }
+header { background:#1B2550; color:#fff; padding:.8rem 1.2rem; display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
+header a { color:#fff; margin-right:1rem; }
+.marca { font-weight:700; font-size:1.2rem; }
+main { max-width:1000px; margin:1.5rem auto; padding:0 1rem; }
+footer { text-align:center; font-size:.8rem; opacity:.7; padding:1rem; }
+.tarjeta { background:rgba(255,255,255,.08); border:1px solid rgba(128,128,128,.35); border-radius:10px; padding:1.2rem; }
+.tema-claro .tarjeta { background:#fff; }
+.estrecha { max-width:420px; margin:auto; }
+label { display:block; margin:.6rem 0; }
+.casilla { display:flex; gap:.5rem; align-items:center; }
+input[type=text], input[type=password], input[type=number], select { width:100%; padding:.45rem; border:1px solid #999; border-radius:6px; }
+button { background:var(--acento); color:#fff; border:0; border-radius:6px; padding:.5rem 1rem; cursor:pointer; }
+button.secundario { background:#777; }
+.filtros { display:flex; gap:1rem; align-items:end; flex-wrap:wrap; }
+.filtros label { margin:0; }
+.misiones { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+.mision { border-radius:10px; padding:1rem; border-left:6px solid; background:rgba(128,128,128,.08); }
+.tema-claro .mision { background:#fff; }
+.mision h2 { font-size:1.1rem; margin:.3rem 0; }
+.facil   { border-color:#2e8b57; }
+.media   { border-color:#d98c00; }
+.dificil { border-color:#c0392b; }
+.rango { font-size:.8rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
+.oro { font-weight:700; color:var(--oro); }
+.hecho { color:#2e8b57; font-weight:700; }
+.nota { font-size:.9rem; opacity:.8; }
+.aviso { background:#fff4d6; color:#5a4300; border-radius:6px; padding:.5rem .8rem; }
+.error { background:#fde2de; color:#8b1a0e; border-radius:6px; padding:.5rem .8rem; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:.5rem; border-bottom:1px solid rgba(128,128,128,.35); text-align:left; }
+code { background:rgba(128,128,128,.18); padding:0 .3rem; border-radius:4px; }
